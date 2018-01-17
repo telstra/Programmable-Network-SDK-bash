@@ -8,7 +8,7 @@
 # ! swagger-codegen (https://github.com/swagger-api/swagger-codegen)
 # ! FROM SWAGGER SPECIFICATION IN JSON.
 # !
-# ! Generated on: 2017-12-19T14:34:36.959+11:00
+# ! Generated on: 2018-01-17T22:02:43.245+11:00
 # !
 # !
 # ! System wide installation:
@@ -69,64 +69,64 @@ _TelstraTPN()
     # The list of available operation in the REST service
     # It's modelled as an associative array for efficient key lookup
     declare -A operations
-    operations["100AuthGeneratetokenPost"]=1
-    operations["100AuthValidatetokenGet"]=1
-    operations["100InventoryLinksContractByLinkidAndContractidGet"]=1
-    operations["100InventoryLinksContractByLinkidAndContractidPut"]=1
-    operations["100InventoryLinksContractByLinkidPost"]=1
-    operations["100AccountByCustomeruuidGet"]=1
-    operations["100AccountUserByCustomeruuidGet"]=1
-    operations["100InventoryDatacentersGet"]=1
-    operations["100InventoryEndpointByEndpointuuidGet"]=1
-    operations["100InventoryEndpointsCustomeruuidByCustomeruuidGet"]=1
-    operations["100InventoryRegularendpointPost"]=1
-    operations["100InventoryVnfendpointPost"]=1
+    operations["authGeneratetokenPost"]=1
+    operations["authValidatetokenGet"]=1
+    operations["inventoryLinksContractByLinkidAndContractidGet"]=1
+    operations["inventoryLinksContractByLinkidAndContractidPut"]=1
+    operations["inventoryLinksContractByLinkidPost"]=1
+    operations["accountByCustomeruuidGet"]=1
+    operations["accountUserByCustomeruuidGet"]=1
+    operations["inventoryDatacentersGet"]=1
     operations["eis100EndpointsAssignTopologyTagByEndpointuuidPost"]=1
-    operations["100InventoryLinkPost"]=1
-    operations["100InventoryLinksByLinkidGet"]=1
-    operations["100InventoryLinksCustomerByCustomeruuidGet"]=1
-    operations["100InventoryLinksHistoryByLinkidGet"]=1
+    operations["inventoryEndpointByEndpointuuidGet"]=1
+    operations["inventoryEndpointsCustomeruuidByCustomeruuidGet"]=1
+    operations["inventoryRegularendpointPost"]=1
+    operations["inventoryVnfendpointPost"]=1
+    operations["inventoryLinkPost"]=1
+    operations["inventoryLinksByLinkidGet"]=1
+    operations["inventoryLinksCustomerByCustomeruuidGet"]=1
+    operations["inventoryLinksHistoryByLinkidGet"]=1
     operations["ttms100TopologyTagByTopotaguuidDelete"]=1
     operations["ttms100TopologyTagByTopotaguuidGet"]=1
     operations["ttms100TopologyTagByTopotaguuidPut"]=1
     operations["ttms100TopologyTagGet"]=1
     operations["ttms100TopologyTagObjectsByTopotaguuidGet"]=1
     operations["ttms100TopologyTagPost"]=1
-    operations["100MarketplaceImageGet"]=1
-    operations["100InventoryRegularvportPost"]=1
-    operations["100InventoryVnfVportPost"]=1
-    operations["100InventoryVportByVportuuidGet"]=1
+    operations["marketplaceImageGet"]=1
+    operations["inventoryRegularvportPost"]=1
+    operations["inventoryVnfVportPost"]=1
+    operations["inventoryVportByVportuuidGet"]=1
 
     # An associative array of operations to their parameters
     # Only include path, query and header parameters
     declare -A operation_parameters
-    operation_parameters["100AuthGeneratetokenPost"]=""
-    operation_parameters["100AuthValidatetokenGet"]=""
-    operation_parameters["100InventoryLinksContractByLinkidAndContractidGet"]="linkid= contractid= "
-    operation_parameters["100InventoryLinksContractByLinkidAndContractidPut"]="linkid= contractid= "
-    operation_parameters["100InventoryLinksContractByLinkidPost"]="linkid= "
-    operation_parameters["100AccountByCustomeruuidGet"]="customeruuid= "
-    operation_parameters["100AccountUserByCustomeruuidGet"]="customeruuid= "
-    operation_parameters["100InventoryDatacentersGet"]=""
-    operation_parameters["100InventoryEndpointByEndpointuuidGet"]="endpointuuid= "
-    operation_parameters["100InventoryEndpointsCustomeruuidByCustomeruuidGet"]="customeruuid= "
-    operation_parameters["100InventoryRegularendpointPost"]=""
-    operation_parameters["100InventoryVnfendpointPost"]=""
+    operation_parameters["authGeneratetokenPost"]=""
+    operation_parameters["authValidatetokenGet"]=""
+    operation_parameters["inventoryLinksContractByLinkidAndContractidGet"]="linkid= contractid= "
+    operation_parameters["inventoryLinksContractByLinkidAndContractidPut"]="linkid= contractid= "
+    operation_parameters["inventoryLinksContractByLinkidPost"]="linkid= "
+    operation_parameters["accountByCustomeruuidGet"]="customeruuid= "
+    operation_parameters["accountUserByCustomeruuidGet"]="customeruuid= "
+    operation_parameters["inventoryDatacentersGet"]=""
     operation_parameters["eis100EndpointsAssignTopologyTagByEndpointuuidPost"]="endpointuuid= "
-    operation_parameters["100InventoryLinkPost"]=""
-    operation_parameters["100InventoryLinksByLinkidGet"]="linkid= "
-    operation_parameters["100InventoryLinksCustomerByCustomeruuidGet"]="customeruuid= "
-    operation_parameters["100InventoryLinksHistoryByLinkidGet"]="linkid= "
+    operation_parameters["inventoryEndpointByEndpointuuidGet"]="endpointuuid= "
+    operation_parameters["inventoryEndpointsCustomeruuidByCustomeruuidGet"]="customeruuid= "
+    operation_parameters["inventoryRegularendpointPost"]=""
+    operation_parameters["inventoryVnfendpointPost"]=""
+    operation_parameters["inventoryLinkPost"]=""
+    operation_parameters["inventoryLinksByLinkidGet"]="linkid= "
+    operation_parameters["inventoryLinksCustomerByCustomeruuidGet"]="customeruuid= "
+    operation_parameters["inventoryLinksHistoryByLinkidGet"]="linkid= "
     operation_parameters["ttms100TopologyTagByTopotaguuidDelete"]="topotaguuid= "
     operation_parameters["ttms100TopologyTagByTopotaguuidGet"]="topotaguuid= "
     operation_parameters["ttms100TopologyTagByTopotaguuidPut"]="topotaguuid= "
     operation_parameters["ttms100TopologyTagGet"]=""
     operation_parameters["ttms100TopologyTagObjectsByTopotaguuidGet"]="topotaguuid= "
     operation_parameters["ttms100TopologyTagPost"]=""
-    operation_parameters["100MarketplaceImageGet"]=""
-    operation_parameters["100InventoryRegularvportPost"]=""
-    operation_parameters["100InventoryVnfVportPost"]=""
-    operation_parameters["100InventoryVportByVportuuidGet"]="vportuuid= "
+    operation_parameters["marketplaceImageGet"]=""
+    operation_parameters["inventoryRegularvportPost"]=""
+    operation_parameters["inventoryVnfVportPost"]=""
+    operation_parameters["inventoryVportByVportuuidGet"]="vportuuid= "
 
     # An associative array of possible values for enum parameters
     declare -A operation_parameters_enum_values

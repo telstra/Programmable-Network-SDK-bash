@@ -10,7 +10,7 @@
 # !
 # ! Based on: https://github.com/Valodim/zsh-curl-completion/blob/master/_curl
 # !
-# ! Generated on: 2017-12-19T14:34:36.959+11:00
+# ! Generated on: 2018-01-17T22:02:43.245+11:00
 # !
 # !
 # ! Installation:
@@ -297,44 +297,44 @@ case $state in
   ops)
     # Operations
     _values "Operations" \
-            "100AuthGeneratetokenPost[Create an authentication token]" \
-            "100AuthValidatetokenGet[Validate authentication token]"             "100InventoryLinksContractByLinkidAndContractidGet[Get active Contract by ContractID]" \
-            "100InventoryLinksContractByLinkidAndContractidPut[Update active Contract by ContractID]" \
-            "100InventoryLinksContractByLinkidPost[Create new Contract on specified link]"             "100AccountByCustomeruuidGet[Get account information details]" \
-            "100AccountUserByCustomeruuidGet[List users]"             "100InventoryDatacentersGet[Get list of all the data centers]"             "100InventoryEndpointByEndpointuuidGet[Get information about the specified endpoint]" \
-            "100InventoryEndpointsCustomeruuidByCustomeruuidGet[Get list of endpoints for a customer]" \
-            "100InventoryRegularendpointPost[Create Physical (Port) Endpoint]" \
-            "100InventoryVnfendpointPost[Create VNF Endpoint]" \
-            "eis100EndpointsAssignTopologyTagByEndpointuuidPost[Assign a Topology Tag to an Endpoint]"             "100InventoryLinkPost[Create Link and initial Contract]" \
-            "100InventoryLinksByLinkidGet[Get details of specified link]" \
-            "100InventoryLinksCustomerByCustomeruuidGet[Get active Links]" \
-            "100InventoryLinksHistoryByLinkidGet[Get Link history]"             "ttms100TopologyTagByTopotaguuidDelete[Delete a topology tag]" \
+            "authGeneratetokenPost[Create an authentication token]" \
+            "authValidatetokenGet[Validate authentication token]"             "inventoryLinksContractByLinkidAndContractidGet[Get active Contract by ContractID]" \
+            "inventoryLinksContractByLinkidAndContractidPut[Update active Contract by ContractID]" \
+            "inventoryLinksContractByLinkidPost[Create new Contract on specified link]"             "accountByCustomeruuidGet[Get account information details]" \
+            "accountUserByCustomeruuidGet[List users]"             "inventoryDatacentersGet[Get list of all the data centers]"             "eis100EndpointsAssignTopologyTagByEndpointuuidPost[Assign a Topology Tag to an Endpoint]" \
+            "inventoryEndpointByEndpointuuidGet[Get information about the specified endpoint]" \
+            "inventoryEndpointsCustomeruuidByCustomeruuidGet[Get list of endpoints for a customer]" \
+            "inventoryRegularendpointPost[Create Physical (Port) Endpoint]" \
+            "inventoryVnfendpointPost[Create VNF Endpoint]"             "inventoryLinkPost[Create Link and initial Contract]" \
+            "inventoryLinksByLinkidGet[Get details of specified link]" \
+            "inventoryLinksCustomerByCustomeruuidGet[Get active Links]" \
+            "inventoryLinksHistoryByLinkidGet[Get Link history]"             "ttms100TopologyTagByTopotaguuidDelete[Delete a topology tag]" \
             "ttms100TopologyTagByTopotaguuidGet[Get information about the specified topology tag]" \
             "ttms100TopologyTagByTopotaguuidPut[Update a topology tag's name and/or description]" \
             "ttms100TopologyTagGet[List all topology tags]" \
             "ttms100TopologyTagObjectsByTopotaguuidGet[List objects for Topology]" \
-            "ttms100TopologyTagPost[Create a named topology tag]"             "100MarketplaceImageGet[List images in the Marketplace]"             "100InventoryRegularvportPost[Create VPort for physical endpoint]" \
-            "100InventoryVnfVportPost[Create VNF VPort]" \
-            "100InventoryVportByVportuuidGet[Get information about the specified VPort]" 
+            "ttms100TopologyTagPost[Create a named topology tag]"             "marketplaceImageGet[List images in the Marketplace]"             "inventoryRegularvportPost[Create VPort for physical endpoint]" \
+            "inventoryVnfVportPost[Create VNF VPort]" \
+            "inventoryVportByVportuuidGet[Get information about the specified VPort]" 
     _arguments "(--help)--help[Print information about operation]"
 
     ret=0
     ;;
   args)
     case $line[1] in
-      100AuthGeneratetokenPost)
+      authGeneratetokenPost)
         local -a _op_arguments
         _op_arguments=(
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100AuthValidatetokenGet)
+      authValidatetokenGet)
         local -a _op_arguments
         _op_arguments=(
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryLinksContractByLinkidAndContractidGet)
+      inventoryLinksContractByLinkidAndContractidGet)
         local -a _op_arguments
         _op_arguments=(
           "linkid=:[PATH] Unique identifier representing a specific link"
@@ -342,7 +342,7 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryLinksContractByLinkidAndContractidPut)
+      inventoryLinksContractByLinkidAndContractidPut)
         local -a _op_arguments
         _op_arguments=(
           "linkid=:[PATH] Unique identifier representing a specific link"
@@ -350,54 +350,28 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryLinksContractByLinkidPost)
+      inventoryLinksContractByLinkidPost)
         local -a _op_arguments
         _op_arguments=(
           "linkid=:[PATH] Unique identifier representing a specific link"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100AccountByCustomeruuidGet)
+      accountByCustomeruuidGet)
         local -a _op_arguments
         _op_arguments=(
           "customeruuid=:[PATH] Unique identifier representing a specific customer"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100AccountUserByCustomeruuidGet)
+      accountUserByCustomeruuidGet)
         local -a _op_arguments
         _op_arguments=(
           "customeruuid=:[PATH] Unique identifier representing a specific customer"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryDatacentersGet)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      100InventoryEndpointByEndpointuuidGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "endpointuuid=:[PATH] Unique identifier representing a specific endpoint"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      100InventoryEndpointsCustomeruuidByCustomeruuidGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "customeruuid=:[PATH] Unique identifier representing a specific customer"
-                    )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      100InventoryRegularendpointPost)
-        local -a _op_arguments
-        _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      100InventoryVnfendpointPost)
+      inventoryDatacentersGet)
         local -a _op_arguments
         _op_arguments=(
                               )
@@ -410,27 +384,53 @@ case $state in
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryLinkPost)
+      inventoryEndpointByEndpointuuidGet)
         local -a _op_arguments
         _op_arguments=(
-                              )
-        _describe -t actions 'operations' _op_arguments -S '' && ret=0
-        ;;
-      100InventoryLinksByLinkidGet)
-        local -a _op_arguments
-        _op_arguments=(
-          "linkid=:[PATH] Unique identifier representing a specific link"
+          "endpointuuid=:[PATH] Unique identifier representing a specific endpoint"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryLinksCustomerByCustomeruuidGet)
+      inventoryEndpointsCustomeruuidByCustomeruuidGet)
         local -a _op_arguments
         _op_arguments=(
           "customeruuid=:[PATH] Unique identifier representing a specific customer"
                     )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryLinksHistoryByLinkidGet)
+      inventoryRegularendpointPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      inventoryVnfendpointPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      inventoryLinkPost)
+        local -a _op_arguments
+        _op_arguments=(
+                              )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      inventoryLinksByLinkidGet)
+        local -a _op_arguments
+        _op_arguments=(
+          "linkid=:[PATH] Unique identifier representing a specific link"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      inventoryLinksCustomerByCustomeruuidGet)
+        local -a _op_arguments
+        _op_arguments=(
+          "customeruuid=:[PATH] Unique identifier representing a specific customer"
+                    )
+        _describe -t actions 'operations' _op_arguments -S '' && ret=0
+        ;;
+      inventoryLinksHistoryByLinkidGet)
         local -a _op_arguments
         _op_arguments=(
           "linkid=:[PATH] Unique identifier representing a specific link"
@@ -477,25 +477,25 @@ case $state in
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100MarketplaceImageGet)
+      marketplaceImageGet)
         local -a _op_arguments
         _op_arguments=(
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryRegularvportPost)
+      inventoryRegularvportPost)
         local -a _op_arguments
         _op_arguments=(
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryVnfVportPost)
+      inventoryVnfVportPost)
         local -a _op_arguments
         _op_arguments=(
                               )
         _describe -t actions 'operations' _op_arguments -S '' && ret=0
         ;;
-      100InventoryVportByVportuuidGet)
+      inventoryVportByVportuuidGet)
         local -a _op_arguments
         _op_arguments=(
           "vportuuid=:[PATH] Unique identifier representing a specific virtual port"
